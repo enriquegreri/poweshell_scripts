@@ -34,5 +34,11 @@ array[0][0][0]
 
 #### Declarar objecto
 ```
-$var = @{equip="PC_01";placa_base=@{marca="gigabyte";modelo="b450m ds3h";socket="AM4"}}
+$var = @{equip="PC_01";
+placa_base=@{
+    marca="gigabyte";
+    modelo="b450m ds3h"
+    socket="AM4"
+    }
+}
 ```
