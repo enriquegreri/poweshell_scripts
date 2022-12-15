@@ -50,4 +50,10 @@ $env:NUMBER_OF_PROCESSORS
 $env:USERPROFILE
 ```
 
+## Variables Automáticas
+```
+$PsScriptRoot
+```
+
+
 ## Estructuras de control
