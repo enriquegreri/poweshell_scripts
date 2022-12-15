@@ -42,5 +42,13 @@ placa_base=@{
     }
 }
 ```
+## Variables de entorno
+```
+$env:USERNAME
+$env:OS
+$env:NUMBER_OF_PROCESSORS
+$env:USERPROFILE
+"$env:USERPROFILE\desktop"
+```
 
 ## Estructuras de control
