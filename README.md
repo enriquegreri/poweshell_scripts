@@ -18,7 +18,7 @@ $boolean = $true
 ```
 $array = @("a","b","c")
 ```
-### Para acceder a la array
+#### Para acceder a la array
 ```
 array[0]
 ```
@@ -29,4 +29,10 @@ $multiarray = @((0,0,0),(0,"*",0),(0,0,0))
 #### Para acceder a la información de una array con varias dimensiones
 ```
 array[0][0][0]
+```
+### Objectos
+
+#### Declarar objecto
+```
+$var = @{equip="PC_01";placa_base=@{marca="gigabyte";modelo="b450m ds3h";socket="AM4"}}
 ```
