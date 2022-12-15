@@ -55,5 +55,12 @@ $env:USERPROFILE
 $PsScriptRoot
 ```
 
+## Operaciones mátematicas
+```
+1+2
+2-3
+6/3
+6%3
+```
 
 ## Estructuras de control
