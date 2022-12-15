@@ -8,5 +8,5 @@ Get-ChildItem -Path "" = ls
 ```
 $numero = 1
 $string = "Hola mundo!"
-$array = @()
+$array = @("a","b","c")
 ```
