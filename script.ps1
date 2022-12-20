@@ -66,9 +66,10 @@ foreach ($i in $arr) {
 
 $arr = Get-ChildItem
 
-foreach($i in $arr)
+function ping()
 {
-    if ( -f $i) {
-        Write-Host $i
-    }
+    Test-Connection -ComputerName "192.168.88.1"
 }
+
+$test=ping
+Write-Host $test

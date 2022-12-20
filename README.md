@@ -146,3 +146,15 @@ foreach ($i in $arr) {
 }
 ```
 
+## Funciones
+
+```
+function ping()
+{
+    Test-Connection -ComputerName "192.168.88.1"
+}
+
+$test=ping
+Write-Host $test
+```
+
