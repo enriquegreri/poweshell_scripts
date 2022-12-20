@@ -156,5 +156,14 @@ function ping()
 
 $test=ping
 Write-Host $test
+
+function ping()
+{
+    param(
+        [String]$web
+    )
+    Test-Connection -ComputerName $web
+}
+$test=ping -web "192.168.88.1"
 ```
 

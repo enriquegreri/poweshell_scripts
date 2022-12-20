@@ -68,8 +68,11 @@ $arr = Get-ChildItem
 
 function ping()
 {
-    Test-Connection -ComputerName "192.168.88.1"
+    param(
+        [String]$web
+    )
+    Test-Connection -ComputerName $web
 }
 
-$test=ping
+$test=ping -web "192.168.88.1"
 Write-Host $test
