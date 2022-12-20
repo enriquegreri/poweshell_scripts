@@ -138,3 +138,11 @@ until ($a -ne false)
         Write-Host $i
     }
 ```
+#### Bucle FOREACH
+```
+$arr = @(1,2,3,5,8,10)
+foreach ($i in $arr) {
+    Write-Host $i
+}
+```
+

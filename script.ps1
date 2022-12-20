@@ -59,3 +59,16 @@ for (;$i -lt 5;)
     $i++
     Write-Host $i
 }
+$arr = @(1,2,3,5,8,10)
+foreach ($i in $arr) {
+    Write-Host $i
+}
+
+$arr = Get-ChildItem
+
+foreach($i in $arr)
+{
+    if ( -f $i) {
+        Write-Host $i
+    }
+}
