@@ -79,6 +79,7 @@ $PsScriptRoot
 ```
 
 ## Estructuras de control
+### Condicionales
 ``` 
 if ( $hola -and $pepe ) {
 
@@ -98,4 +99,42 @@ switch ($valor) {
     }
 }
 
+```
+
+### Repetitivas
+#### Bucle WHILE Y UNTIL
+##### Solo ejecuta el codigo si se cumple la condición.
+```
+while ($a -ne false)
+{
+    Write-Host "Hola mundo!"
+}
+
+until ($a -ne false)
+{
+    Write-Host "Hola mundo!"
+}
+```
+#### Bucle DO WHILE Y DO UNTIL
+#### Se ejecuta mínimo una vez y después si cumple la condición
+```
+do
+{
+    Write-Host "Hola mundo!"
+}
+while ($a -ne false)
+
+do
+{
+    Write-Host "Hola mundo!"
+}
+until ($a -ne false)
+```
+
+#### Bucle FOR
+```
+    for ($i=0;$i -lt 5; $i++)
+    {
+        Write-Host $i
+    }
 ```

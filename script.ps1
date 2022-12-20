@@ -20,7 +20,7 @@ switch ($valor) {
     }
 }
 
-$valor = "*"
+$valor = "-"
 switch ($valor) {
     + 
     {  
@@ -35,3 +35,20 @@ switch ($valor) {
         Write-Host "Por defecto"
     }
 }
+
+$valor = "jose"
+switch ($valor) {
+    jose
+    {  
+        Write-Host "Hola Jose"
+    }
+    Default 
+    {
+        Write-Host "Por defecto"
+    }
+}
+
+for ($i=0;$i -lt 5; $i++)
+    {
+        Write-Host $i
+    }
