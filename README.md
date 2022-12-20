@@ -69,4 +69,22 @@ $PsScriptRoot
 
 ```
 
+
+## Operadores
+```
+-and
+-or
+-xor
+!
+```
+
 ## Estructuras de control
+``` 
+if ( $hola -and $pepe ) {
+
+}
+else
+{
+    
+}
+```
