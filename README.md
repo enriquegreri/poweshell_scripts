@@ -85,6 +85,17 @@ if ( $hola -and $pepe ) {
 }
 else
 {
-    
+
 }
+switch ($valor) {
+    1
+    {
+        Write-Host "Opc1"
+    }
+    2
+    {
+        Write-Host "Opc2"
+    }
+}
+
 ```
