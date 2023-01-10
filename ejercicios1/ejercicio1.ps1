@@ -11,5 +11,3 @@ if ($numero1 -gt $numero2) {
 elseif ($numero1 -lt $numero2) {
     $numero2..$numero1
 }
-
-
