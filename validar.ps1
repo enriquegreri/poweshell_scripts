@@ -1,7 +1,7 @@
 
 function EsNumeric($valueString) {
     $value = $valueString -as [int]
-    if ($value -eq "") {
+    if ($valueString -eq "") {
         return $FALSE
     }
     else {
