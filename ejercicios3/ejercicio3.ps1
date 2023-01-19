@@ -1,7 +1,7 @@
 while ($true) {
     try {
         $n = Read-Host -Prompt "Introduce hasta que numero quieres dibujar"
-        $n = $n -as [int]
+        [int]$n = $n
         break
     }
     catch {

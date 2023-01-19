@@ -1,13 +1,13 @@
 $list = @()
 while ($true) {
-    $value = Read-Host -Prompt "Introduce un número real (q para finalizar)"
-    if ($value -ne "" -and $value -ne "q") {
+    [string]$value = Read-Host -Prompt "Introduce un número real (q para finalizar)"
+    if ($value -ne "q") {
         try {
-            $value = $value -as [double]
-                $list += $value
+            [double]$value = $value
+            $list += $value
         }
         catch {
-            Write-Host "Introduce un número real"
+            Write-Host "El número no es real"
         }
     }
     if ($value -eq "q") {

@@ -1,18 +1,16 @@
 $list = @()
 while ($true) {
-    $value = Read-Host -Prompt "Introduce un número entero (0 para finalizar)"
-    if ($value -ne "") {
+    [string]$value = Read-Host -Prompt "Introduce un número entero (q para finalizar)"
+    if ($value -ne "q" -and $value -match "^\d+$") {
         try {
-            $value = $value -as [int]
-            if ($value -ne 0){
-                $list += $value
-            }
+            [int]$value = $value
+            $list += $value
         }
         catch {
-            Write-Host "Introduce un número entero"
+            Write-Host "El número no es entero"
         }
     }
-    if ($value -eq 0) {
+    if ($value -eq "q") {
         break
     }
 }
